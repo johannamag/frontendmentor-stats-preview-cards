@@ -17,6 +17,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: var(--main-bg);
+}
+
 .main {
   background-color: var(--main-bg);
   min-height: 100vh;
@@ -102,4 +106,40 @@ a {
 
 a:hover {
   color: var(--accent);
+}
+
+@media screen and (max-width: 629px) {
+  .card {
+    flex-direction: column-reverse;
+  }
+  .card-image {
+    background-image: url("./images/image-header-mobile.jpg");
+    height: 400px;
+    width: 100%;
+  }
+  .card-texts {
+    width: 100%;
+  }
+  .heading {
+    text-align: center;
+  }
+  .desc {
+    text-align: center;
+  }
+  .stats {
+    flex-direction: column;
+    text-align: center;
+  }
+  .stat {
+    margin-bottom: 30px;
+  }
+  .stat:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .card-image {
+    height: 300px;
+  }
 }

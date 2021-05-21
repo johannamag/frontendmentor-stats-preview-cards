@@ -16,3 +16,90 @@
   font-size: 15px;
   font-family: "Inter", sans-serif;
 }
+
+.main {
+  background-color: var(--main-bg);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  max-width: 1100px;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+}
+
+.card-texts {
+  padding: 60px;
+  width: 90%;
+}
+
+.heading {
+  color: var(--heading-stats);
+  font-size: 2.2rem;
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 20px;
+}
+
+.purple {
+  color: var(--accent);
+  font-size: 2.2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.desc {
+  color: var(--paragraph);
+  line-height: 1.7rem;
+  margin-bottom: 60px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number {
+  color: var(--heading-stats);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.stats-desc {
+  color: var(--stats-headings);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.card-image {
+  background-image: url("./images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 70%;
+}
+
+.attribution {
+  background-color: var(--main-bg);
+  color: var(--stats-headings);
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  color: var(--stats-headings);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
